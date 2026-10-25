@@ -78,6 +78,6 @@ PCA uygulandığında doğruluk **%83,38** seviyesine gerilemiştir. Bu sonuç, 
 
 ## Çalışmanın Yazarları
 
-- Sudenaz Özel
 - Mert Uğur
+- Sudenaz Özel
 - Gülay Çiçek
