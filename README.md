@@ -58,7 +58,7 @@ Bunlara ek olarak YSA tabanlı geliştirilmiş model üzerinde veri hazırlama, 
 En yüksek performans, **PCA uygulanmadan değerlendirilen geliştirilmiş YSA modelinde** elde edilmiştir.
 
 | Metrik | Sonuç |
-|---|---:|
+| --- | ---: |
 | Accuracy | **%91,46** |
 | Precision | **%91,54** |
 | Recall | **%91,46** |
@@ -68,13 +68,55 @@ En yüksek performans, **PCA uygulanmadan değerlendirilen geliştirilmiş YSA m
 
 PCA uygulandığında doğruluk **%83,38** seviyesine gerilemiştir. Bu sonuç, bu veri setinde boyut indirgeme işleminin hesaplama maliyetini azaltabilmesine rağmen sınıflandırma performansında bilgi kaybına yol açabildiğini göstermiştir.
 
+## Kaynak Kodlar
+
+Projenin Python kaynak kodları [`src/`](./src) klasörü altında yer almaktadır.
+
+- [`preprocessing.py`](./src/preprocessing.py) — Veri ön işleme, TF-IDF, özellik seçimi, PCA ve çapraz doğrulama hazırlıkları
+- [`machine_learning_models.py`](./src/machine_learning_models.py) — Naive Bayes, SVM, Logistic Regression, Random Forest ve KNN modelleri
+- [`deep_learning_models.py`](./src/deep_learning_models.py) — ANN, LSTM, CNN, HAN ve Transformer deneyleri
+- [`custom_ann.py`](./src/custom_ann.py) — Geliştirilmiş YSA modeli, SMOTE, PCA karşılaştırmaları ve değerlendirme metrikleri
+
+Kaynak kodların deney yapısı ve dosya açıklamaları için:
+
+📁 [`src/README.md`](./src/README.md)
+
+## Proje Dosyaları
+
+- 📊 [`all-data.csv`](./all-data.csv) — Finansal haber veri seti
+- 💻 [`src/`](./src) — Python kaynak kodları
+- 📦 [`requirements.txt`](./requirements.txt) — Python bağımlılıkları
+- 📄 [`FINANCIAL_NEWS_NLP_ARTICLE.pdf`](./FINANCIAL_NEWS_NLP_ARTICLE.pdf) — Türkçe akademik makale
+- 📄 [`FINANCIAL_NEWS_NLP_ARTICLE_EN.pdf`](./FINANCIAL_NEWS_NLP_ARTICLE_EN.pdf) — İngilizce akademik makale
+- 📈 [`FINANCIAL_NEWS_NLP_RESULTS.pdf`](./FINANCIAL_NEWS_NLP_RESULTS.pdf) — Model karşılaştırmaları, confusion matrix'ler, PCA öncesi/sonrası sonuçlar ve diğer görseller
+
 ## Kullanılan Teknolojiler ve Yöntemler
 
 `Python` `NLP` `Machine Learning` `Deep Learning` `TensorFlow` `Keras` `Scikit-learn` `Pandas` `NumPy` `TF-IDF` `SMOTE` `PCA` `ANN` `LSTM` `CNN` `HAN` `Transformer` `Stratified K-Fold`
 
-## Makale
+## Kurulum
 
-📄 [`FINANCIAL_NEWS_NLP_ARTICLE.pdf`](./FINANCIAL_NEWS_NLP_ARTICLE.pdf) — Çalışmanın yöntemlerini, literatür incelemesini, deneylerini ve ayrıntılı model sonuçlarını içeren akademik makale
+Gerekli Python bağımlılıkları repository kök dizinindeki `requirements.txt` dosyasında bulunmaktadır.
+
+```bash
+pip install -r requirements.txt
+```
+
+Kodlar proje kapsamında gerçekleştirilen farklı deneyleri temsil edecek şekilde `src/` klasörü altında düzenlenmiştir.
+
+## Akademik Makaleler
+
+Çalışmanın yöntemleri, literatür incelemesi, deney süreci ve ayrıntılı model sonuçları akademik makalelerde yer almaktadır.
+
+🇹🇷 [Türkçe Makaleyi Görüntüle](./FINANCIAL_NEWS_NLP_ARTICLE.pdf)
+
+🇬🇧 [English Article](./FINANCIAL_NEWS_NLP_ARTICLE_EN.pdf)
+
+## Sonuçlar ve Görseller
+
+Model karşılaştırmaları, karmaşıklık matrisleri, PCA öncesi ve sonrası deneyler ile diğer sonuç görselleri ayrı bir PDF dosyasında sunulmuştur.
+
+📈 [Model Sonuçlarını ve Görsellerini Görüntüle](./FINANCIAL_NEWS_NLP_RESULTS.pdf)
 
 ## Çalışmanın Yazarları
 
